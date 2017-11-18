@@ -1,4 +1,5 @@
-# sell
+# a sell app --created by vue.js 
+# just study
 
 > sell app
 
