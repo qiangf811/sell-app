@@ -232,9 +232,9 @@ export default {
       overflow: auto
       background:rgba(7,17,27,0.8)
       opacity:1
-      &.fade-enter-active, .fade-leave-active
+      &.fade-enter-active, &.fade-leave-active
         transition: all .5s
-      &.fade-enter, .fade-leave-to
+      &.fade-enter, &.fade-leave-to
         opacity:0
         background:rgba(7,17,27,0)
       .detail-wrapper
