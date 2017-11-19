@@ -20,13 +20,15 @@ export default {
     }
   },
   methods: {
-    addCart() {
+    addCart(event) {
       if (!this.food.count) {
         this.$set(this.food, 'count', 1)
         this.food.count = 1
       } else {
         this.food.count++
       }
+      this.$emit('cardAdd', event.target)
+      this.$root.eventHub.$emit('cartcontrolAdd', event.target)
     },
     decreaseCart() {
       if (this.food.count) {

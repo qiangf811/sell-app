@@ -30,7 +30,7 @@
                   <span class="old" v-show="food.oldPrice">￥{{food.oldPrice}}</span>
                 </div>
                 <div class="cartcontrol-wrapper">
-                  <cartcontrol :food="food"></cartcontrol>
+                  <cartcontrol :food="food" @cardAdd="_drop"></cartcontrol>
                 </div>
               </div>
             </li>
@@ -127,7 +127,8 @@ export default {
         height += item.clientHeight
         this.listHeights.push(height)
       }
-    }
+    },
+    _drop(target) {}
   },
   components: {
     shopcart,
