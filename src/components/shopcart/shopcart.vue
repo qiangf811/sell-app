@@ -219,6 +219,7 @@ export default {
       if (this.totalPrice < this.minPrice) {
         return
       }
+      console.log(`共需支付￥${this.totalPrice}元`)
     }
   },
   components: {
