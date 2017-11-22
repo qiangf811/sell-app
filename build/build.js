@@ -4,7 +4,9 @@ require('./check-versions')()
 process.env.NODE_ENV = 'production'
 
 const ora = require('ora')
+//命令行显示文本工具
 const rm = require('rimraf')
+//专门删除模块插件工具
 const path = require('path')
 const chalk = require('chalk')
 const webpack = require('webpack')
